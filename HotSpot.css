@@ -1,0 +1,87 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    background-color: #496DA5;
+    color: white;
+    font-weight: bold;
+    padding: 4px 24px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#main-wrapper {
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+
+#main-wrapper .times-wrapper {
+    height: 735px;
+    position: absolute;
+}
+#main-wrapper .day-wrapper {
+    margin-bottom: 60px;
+}
+#main-wrapper .container {
+    width: 620px;
+    height: 720px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    position: relative;
+    border-left: 1px solid #DCDCDC;
+    margin-left: 60px;
+    top: 8px;
+}
+
+#main-wrapper .container .event-div {
+    position: absolute;
+    border: 1px solid #DCDCDC;
+    border-left: 4px solid #496DA5;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 8px;
+    overflow-y: auto;
+}
+
+#main-wrapper .container .event-div .title {
+    color: #496DA5;
+}
+ 
+#main-wrapper .container .event-div .sub-title {
+    color: #6D6D6D;
+    font-size: 10px;
+}
+
+#main-wrapper .times-wrapper #times {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #7B7B7B;
+    align-items: flex-end;
+}
+
+#main-wrapper .times-wrapper #times-two {
+    position: absolute;
+    left: 36px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 8px;
+    line-height: 18px;
+    color: #B0B0B0;
+}
