@@ -5,18 +5,17 @@ body {
     right: 0;
     bottom: 0;
 }
+.all_site{
+    widows: 1300px;
+    background-color:#FFF;
+    margin:0 auto
+}
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    right: 10px;
-    background-color: #496DA5;
-    color: white;
-    font-weight: bold;
-    padding: 4px 24px;
-    box-sizing: border-box;
-    font-size: 20px;
+header {
+    height: 49px;/*TODO: change to the pic px*/
+    float: left;
+    width:100%;
+    background:#333333;/*TODO: add pic*/
 }
 
 #main-wrapper {
