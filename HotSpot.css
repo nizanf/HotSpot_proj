@@ -16,71 +16,31 @@ header {
     float: left;
     width:100%;
     background:#333333;/*TODO: add pic*/
+    background-image:url("nike_01.JPG");
 }
 
-#main-wrapper {
-    position: relative;
-    left: 50px;
-    top: 100px;
+header .logo{
+    widows: 100px;
+    float: left;
+    text-align: left;
+    margin-left:25px;
+
+}
+header nav{
+    width:100px;
+    float: right;
+    background-color:#333;
+}
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
 }
 
-#main-wrapper .times-wrapper {
-    height: 735px;
-    position: absolute;
-}
-#main-wrapper .day-wrapper {
-    margin-bottom: 60px;
-}
-#main-wrapper .container {
-    width: 620px;
-    height: 720px;
-    padding: 0px 10px;
-    box-sizing: border-box;
-    background-color: #ECECEC;
-    position: relative;
-    border-left: 1px solid #DCDCDC;
-    margin-left: 60px;
-    top: 8px;
-}
+header nav ul li{
+    display: inline-block;
+    color: #0faa6e;
+    height:49px;
 
-#main-wrapper .container .event-div {
-    position: absolute;
-    border: 1px solid #DCDCDC;
-    border-left: 4px solid #496DA5;
-    box-sizing: border-box;
-    background-color: white;
-    padding: 8px;
-    overflow-y: auto;
-}
 
-#main-wrapper .container .event-div .title {
-    color: #496DA5;
-}
- 
-#main-wrapper .container .event-div .sub-title {
-    color: #6D6D6D;
-    font-size: 10px;
-}
-
-#main-wrapper .times-wrapper #times {
-    position: absolute;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #7B7B7B;
-    align-items: flex-end;
-}
-
-#main-wrapper .times-wrapper #times-two {
-    position: absolute;
-    left: 36px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-size: 8px;
-    line-height: 18px;
-    color: #B0B0B0;
 }
