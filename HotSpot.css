@@ -15,8 +15,8 @@ header {
     height: 49px;/*TODO: change to the pic px*/
     float: left;
     width:100%;
-    background:#333333;/*TODO: add pic*/
-    background-image:url("nike_01.JPG");
+    background:#333333;
+    background-image:url("headline.JPG");
 }
 
 header .logo{
@@ -29,7 +29,7 @@ header .logo{
 header nav{
     width:100px;
     float: right;
-    background-color:#333;
+   
 }
 header nav ul{
     list-style-type: none;
@@ -39,8 +39,13 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
-    color: #0faa6e;
+    color: #333;
     height:49px;
+    padding:0 20px;
+    line-height:49px;
+    vertical-align:center;
+    text-align: center;
+    float: right;
 
 
 }
