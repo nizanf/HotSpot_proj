@@ -27,7 +27,7 @@ header .logo{
 
 }
 header nav{
-    width:100px;
+    width:500px;
     float: right;
    
 }
@@ -38,14 +38,15 @@ header nav ul{
 }
 
 header nav ul li{
-    display: inline-block;
-    color: #333;
+    display:inline-block;
+    color: rgb(12, 12, 12);
     height:49px;
+    
     padding:0 20px;
     line-height:49px;
     vertical-align:center;
     text-align: center;
-    float: right;
-
+    float: right; 
+    border-right: 1 px solid #ccc;
 
 }
