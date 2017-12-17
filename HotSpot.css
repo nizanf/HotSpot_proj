@@ -71,12 +71,12 @@ header .head_pic{
     width: 100%;
     text-align: center;
     
-
 }
 .main .boxes{
     float: left;
     width: 100%;
 }
+
 .main .boxes .box{
     width: 25%;
     float: left;
@@ -85,9 +85,10 @@ header .head_pic{
 }
 
 .main .boxes .box .box_image{
-    width: 100%;
+    width: 70%;
     float: left;
-    /* height: 100px; */
+    height: 50px;
+    margin-top: 70px;
 
 }
 
@@ -97,7 +98,19 @@ header .head_pic{
     text-align: center;
     height: 180px;
     margin-bottom: 7px solid #ccc;
+
 }    
+.main .boxes .box .box_txt li{
+    display:inline-block;
+    color: black;
+    height:49px;
+    padding:0px;
+    line-height:49px;
+    vertical-align:center;
+    text-align: center;
+    float: right; 
+    border-right: 1px solid #ccc;
+}
 
 footer{
     background-color: #070000; 
