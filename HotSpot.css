@@ -36,10 +36,11 @@ header nav{
     float: right;
    margin-top: 0;
 }
+
 header nav ul{
     list-style-type: none;
     padding: 200;
-    margin:600;
+    margin:auto;
 }
 
 header nav ul li{
@@ -70,6 +71,8 @@ header .head_pic{
     float: left;
     width: 100%;
     text-align: center;
+    text-decoration-color: white;
+    text-shadow: white;
     
 }
 .main .boxes{
@@ -108,7 +111,8 @@ header .head_pic{
     line-height:49px;
     vertical-align:center;
     text-align: center;
-    float: right; 
+    float: left; 
+    margin-left: 46%;
     border-right: 1px solid #ccc;
 }
 
