@@ -12,7 +12,10 @@ img{
 }
 
 .all_site{
-    widows: 1024px;
+    /* position: absolute; */
+    /* widows: 1024px; */
+    width: 100%;
+    height: 100%;
     background-color:rgb(248, 246, 246);
     margin:0 auto
 }
@@ -25,16 +28,17 @@ header {
 }
 
 header .logo{
-    widows: 200px;
     float: left;
     text-align: left;
     margin-left:0;
+    padding: 1rem;
 
 }
 header nav{
     width:408px;
     float: right;
-   margin-top: 0;
+   margin-top: 20px;
+   /* padding: 1rem; */
 }
 
 header nav ul{
@@ -46,7 +50,7 @@ header nav ul{
 header nav ul li{
     display:inline-block;
     color: rgb(250, 248, 248);
-    height:49px;
+    height:40px;
     padding:0 20px;
     line-height:49px;
     vertical-align:center;
@@ -57,14 +61,16 @@ header nav ul li{
 }
 header .head_pic{
     width: 100%;
-    height: 100%;
-    background-image:url("_images/busy_street2.JPG");
+    height: 95%;
+    background-image:url("../_images/busy_street2.JPG");
     float: left;
 }
 
 .main{
+    position: relative;
     width: 100%;
     float: left;
+    margin-top: 20px;
 }
 
 .main h1{
@@ -72,10 +78,11 @@ header .head_pic{
     width: 100%;
     text-align: center;
     text-decoration-color: white;
-    text-shadow: white;
+    color: white;
     
 }
 .main .boxes{
+    
     float: left;
     width: 100%;
 }
@@ -91,7 +98,7 @@ header .head_pic{
     width: 70%;
     float: left;
     height: 50px;
-    margin-top: 70px;
+    margin-top: 72px;
 
 }
 
@@ -117,15 +124,15 @@ header .head_pic{
 }
 
 footer{
+    position: absolute;
     background-color: #070000; 
-    float: left;
-    width: 100%;
+    right:0;
+    bottom: 0;
+    left:0;
+    padding: 1rem;
     height: 40px;
-    line-height: 40px;
     text-align: center;
     color: rgb(250, 248, 248);
-    margin-bottom: 0;
-
 }
 
 p.clear{

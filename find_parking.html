@@ -2,11 +2,10 @@
 <html>
 <head>
   <title>Find Parking</title>
-  <link rel="stylesheet" type="text/css" href="HotSpot.css">
-  <link rel="stylesheet" type="text/css" href="find_parking.css">
-
-
+  <link rel="stylesheet" type="text/css" href="_css/HotSpot.css">
+  <link rel="stylesheet" type="text/css" href="_css/find_parking.css">
 </head>
+
 <body>
   <div class="all_site">
       <header>
@@ -19,31 +18,17 @@
                   <a href="HotSpot.html"><li>Home Page</li></a>
               </ul>
           </nav>
-          <div class="back">
-            
-          </div>
+          <div class="back"></div>
       
-          <div id="googleMap"</div>
+          <div id="googleMap"</div> 
+        </header>
+        <script type="text/javascript" src="_scripts/script.js"></script>
 
-  <script>
-    function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng(32.121678, 34.791143),
-            zoom:10,
-            zoomControl:true
-        };
-        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-    </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIn9K5Niimp_WDiNC8ckPUcKdi_RxYLHM&callback=myMap"></script>
-    </header>>
-    <footer>
-        find your spot
-    </footer> 
-     
-    <p class="clear"></p>  
-  </div>   
-   
+        <footer>
+            find your spot
+        </footer>  
+        <p class="clear"></p>  
+
+    </div>  
 </body>
 </html>
