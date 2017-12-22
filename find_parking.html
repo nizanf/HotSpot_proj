@@ -20,24 +20,58 @@
           </nav>
           <div class="back"></div>
       
-          <div id="map" style="width:80%;height:100%;"></div>
+          <div id="map"></div>
 
         </header>
         <script>
-            function myMap() {
-              var mapCanvas = document.getElementById("map");
-              var myCenter = new google.maps.LatLng(32.121678, 34.791143); 
-              var mapOptions = {center: myCenter, zoom: 10};
-              var map = new google.maps.Map(mapCanvas,mapOptions);
-              var marker = new google.maps.Marker({
-                position: myCenter,
-                animation: google.maps.Animation.BOUNCE
-              });
-              marker.setMap(map);
+            function initMap(){
+                //map options
+                var mapCanvas = document.getElementById("map");
+                var myCenter = new google.maps.LatLng(32.121678, 34.791143);
+                var mapOptions = {center: myCenter, zoom: 10};
+                //new map
+                var map = new google.maps.Map(mapCanvas,mapOptions);
+           
+                //add marker
+                var marker = new google.maps.Marker({
+                    position: myCenter,map:map
+                    //to change image of marker
+                    //icon
+                });
+                
+                //Add the seller's name and rating
+                var infoWindow = new google.maps.InfoWindow({
+                    content:'<h1>Adam sendler rating:269</h1>'
+                });
+
+                marker.addListener('click', function() {
+                    infoWindow.open(map, marker);
+                 }); 
             }
+
+  
+            //  
+            //     
+            //     animation: google.maps.Animation.BOUNCE
+            //   });
+            //   marker.setMap(map);
+            // }
+            // 
+
+            // function placeMarker(location) {
+            //     var marker = new google.maps.Marker({
+            //         position: location, 
+            //         map: map
+            //     });
+            // }
+
+
+
             </script>
             
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIn9K5Niimp_WDiNC8ckPUcKdi_RxYLHM&callback=myMap"></script>
+
+            
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIn9K5Niimp_WDiNC8ckPUcKdi_RxYLHM&callback=initMap"></script>
             
         <footer>
             find your spot

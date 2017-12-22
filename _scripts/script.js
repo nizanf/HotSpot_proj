@@ -4,8 +4,23 @@ function MyProfile(){
     var password=document.getElementsByName("password").value;
 
 }
+alert("write");
 
 
+
+
+// function myMap() {
+
+//     var mapCanvas = document.getElementById("map");
+//     var myCenter = new google.maps.LatLng(32.121678, 34.791143); 
+//     var mapOptions = {center: myCenter, zoom: 10};
+//     var map = new google.maps.Map(mapCanvas,mapOptions);
+//     var marker = new google.maps.Marker({
+//       position: myCenter,
+//       animation: google.maps.Animation.BOUNCE
+//     });
+//     marker.setMap(map);
+//   }
 
 // function myMap() {
 // for (i=0 ;i<100; i++ ){
