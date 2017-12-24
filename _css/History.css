@@ -19,6 +19,48 @@ margin-left: 20px;
     margin:0 auto
 }
 
+.body header {
+
+    height: 65px;
+    float: left;
+    width:100%;
+    background:#070000;
+
+}
+
+.body header .logo{
+    float: left;
+    text-align: left;
+    margin-left:0;
+    padding: 1rem;
+
+}
+.body header nav{
+    width:408px;
+    float: right;
+   margin-top: 15px;
+   /* padding: 1rem; */
+}
+
+.body header nav ul{
+    list-style-type: none;
+    padding: 200;
+    margin:auto;
+}
+
+.body header nav ul li{
+    display:inline-block;
+    color: rgb(250, 248, 248);
+    height:40px;
+    padding:0 20px;
+    line-height:49px;
+    vertical-align:center;
+    text-align: center;
+    float: right; 
+    border-right: 1px solid #ccc;
+
+}
+
 footer{
     position: absolute;
     background-color: #070000; 
