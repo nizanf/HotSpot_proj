@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Find Parking</title>
-  <link rel="stylesheet" type="text/css" href="_css/HotSpot.css">
-  <link rel="stylesheet" type="text/css" href="_css/find_parking.css">
+<title>Find Parking</title>
+<link rel="stylesheet" type="text/css" href="_css/HotSpot.css">
+<link rel="stylesheet" type="text/css" href="_css/find_parking.css">
 </head>
 
 <body>
-  <div class="all_site">
-      <header>
+<div class="all_site">
+    <header>
         <!-- logo line -the head line of all pages   -->
         <div class="logo">
-              <img src="_images/cars.JPG" height="49"/>          
-          </div>  
-          <nav>
-              <ul>
-                  <a href="history.html"><li>My History</li></a>
-                  <a href="HotSpot.html"><li>Home Page</li></a>
-              </ul>
-          </nav>
-          <!-- background picture define in find_parking.css -->
-          <div class="back"></div>
-          <div id="floating-panel">
-                <input id="address" type="textbox" value="Sydney, NSW">
-                <input id="submit" type="button" value="Find Parking">
+            <img src="_images/cars.JPG" height="49"/>          
+        </div>  
+        <nav>
+            <ul>
+                <a href="history.html"><li>My History</li></a>
+                <a href="HotSpot.html"><li>Home Page</li></a>
+            </ul>
+        </nav>
+        <!-- background picture define in find_parking.css -->
+        <div class="back"></div>
+        <div id="floating-panel">
+                <input id="address" type="textbox" value="Tel Aviv">
+                <input id="submit" type="button" value="Find Parking"><br>
+                <input id="distance" type="textbox" value="100 m">
+                <input id="submit" type="button" value="choose distance">
             </div>
 
-          <!-- the map windoe -->
-          <div id="map"></div>
+        <!-- the map windoe -->
+        <div id="map"></div>
 
         </header>
         <script>
@@ -38,7 +40,7 @@
                 var mapCanvas = document.getElementById("map");
                 var myCenter = new google.maps.LatLng(32.121678, 34.791143);
                 var mapOptions = {center: myCenter, zoom: 14};
-               
+            
                 //new map
                 var map = new google.maps.Map(mapCanvas,mapOptions);
                 
@@ -56,10 +58,6 @@
                     {
                         coords:{lat:32.121678, lng:34.873},
                         content : '<h1>Adam sendler rating:269</h1>'
-                    },
-                    {
-                        coords:myCenter,
-                        content : '<h1>the center of the map</h1>'
                     }
                 ];              
             
@@ -130,7 +128,7 @@
                                         'Error: Your browser doesn\'t support geolocation.');
                     infoWindow.open(map);
                 }
-         
+        
             </script>
             
 
